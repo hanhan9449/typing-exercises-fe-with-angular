@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--hhkb-keyboard-bg-color);
+  padding: 24px 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}

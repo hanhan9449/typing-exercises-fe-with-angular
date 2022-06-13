@@ -1,0 +1,10 @@
+.container {
+  padding: 4px;
+}
+
+.grey {
+  background-color: var(--hhkb-keyboard-key-grey-color);
+}
+.milk-white {
+  background-color: var(--hhkb-keyboard-key-milk-white-color);
+}

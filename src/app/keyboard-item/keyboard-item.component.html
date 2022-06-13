@@ -1,0 +1,5 @@
+<div [ngClass]="['container', getColor()]" [style.width.px]="getWidth()"
+     [style.height.px]="getHeight()">
+  <div>{{line1}}</div>
+  <div *ngIf="shouldShowLine2()">{{line2}}</div>
+</div>

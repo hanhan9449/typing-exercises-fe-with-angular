@@ -1,0 +1,11 @@
+<div class="container" [style.gap.px]="getKeyboardGap$()">
+  <div *ngFor="let lines of getHHKBKeyboardConfig$()|async"
+       [class]="'line'"
+       [style.gap.px]="getKeyboardGap$()">
+    <app-keyboard-item *ngFor="let kii of lines" [variant]="kii.variant" [line1]="kii?.line1" [line2]="(kii)?.line2"
+                       [width]="kii.width ?? getDefaultWidth$()"
+                       [height]="kii.height ?? getDefaultHeight$()"
+                       [color]="kii.color"
+    ></app-keyboard-item>
+  </div>
+</div>
