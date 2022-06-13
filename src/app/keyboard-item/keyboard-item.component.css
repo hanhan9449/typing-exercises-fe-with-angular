@@ -8,3 +8,8 @@
 .milk-white {
   background-color: var(--hhkb-keyboard-key-milk-white-color);
 }
+
+.one-line {
+  display: flex;
+  align-items: center;
+}
