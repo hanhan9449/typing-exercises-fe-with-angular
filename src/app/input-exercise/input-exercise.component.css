@@ -1,8 +1,16 @@
 .container {
-  font-size: 20px;
+  font-size: 24px;
   max-width: 80%;
   margin: auto;
   margin-bottom: 32px;
   line-height: 1.8;
   word-break: break-all;
+  letter-spacing: 1px;
+
+  font-family: 'my-times', "Times New Roman", serif;
+}
+
+@font-face {
+  font-family: 'my-times';
+  src: local("Times New Roman"), local('Times'), url("src/assets/fonts/times.ttf");
 }
