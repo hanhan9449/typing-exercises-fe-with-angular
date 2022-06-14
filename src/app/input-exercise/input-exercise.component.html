@@ -1,5 +1,8 @@
 <div class="container">
 
-  <app-input-item *ngFor="let ch of testText.slice(start,end).split(''); index  as index" [ch]="ch"
+  <ng-container *ngFor="let ch of testText.slice(start,end).split(''); index  as index" >
+    <app-caret *ngIf="index == current"></app-caret>
+  <app-input-item [ch]="ch"
                   [state]="getState(index)"></app-input-item>
+  </ng-container>
 </div>
