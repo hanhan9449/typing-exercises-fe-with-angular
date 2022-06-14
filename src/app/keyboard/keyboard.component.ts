@@ -27,4 +27,7 @@ export class KeyboardComponent implements OnInit {
   getHHKBKeyboardConfig$(): Observable<KeyboardItemInterface[][]> {
     return of(hhkbKeyboardConfig);
   }
+  isLastLine(index: number): boolean {
+    return index === hhkbKeyboardConfig.length - 1;
+  }
 }
