@@ -10,3 +10,8 @@
 .black {
   color: black;
 }
+
+.space {
+  margin-left: 2px;
+  margin-right: 2px;
+}

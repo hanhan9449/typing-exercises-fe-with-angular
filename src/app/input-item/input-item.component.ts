@@ -20,4 +20,13 @@ export class InputItemComponent implements OnInit {
     }
     return this.state;
   }
+  getCh(): string {
+    if (this.isSpace()) {
+      return '␣';
+    }
+    return this.ch;
+  }
+  isSpace(): boolean {
+    return this.ch === ' ';
+  }
 }
