@@ -18,17 +18,6 @@ export class KeyboardService implements OnInit, OnDestroy {
     this.keyup$ = fromEvent<KeyboardEvent>(window, 'keyup');
     this.keyDownCode$ = this.keyDown$.pipe(pluck('code'));
     this.keyUpCode$ = this.keyup$.pipe(pluck('code'));
-
-    this.obsList.push(
-      this.keyDown$.subscribe((code) =>
-        console.log(Date.now(), 'Keyboard down code --->', code)
-      )
-    );
-    // this.obsList.push(
-    //   this.keyUpCode$.subscribe((code) =>
-    //     console.log(Date.now(), 'Keyboard up code --->', code)
-    //   )
-    // );
   }
 
   ngOnDestroy() {

@@ -10,7 +10,26 @@
   font-family: 'my-times', "Times New Roman", serif;
 }
 
+.container:focus {
+  outline: 0;
+}
+
 @font-face {
   font-family: 'my-times';
   src: local("Times New Roman"), local('Times'), url("src/assets/fonts/times.ttf");
+}
+
+
+.blur {
+  filter: blur(4px);
+}
+
+.info1 {
+  margin:auto;
+}
+
+.info-panel {
+  display: flex;
+  margin: 16px 0;
+  height: 32px;
 }

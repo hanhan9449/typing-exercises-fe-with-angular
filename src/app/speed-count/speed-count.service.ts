@@ -31,7 +31,6 @@ export class SpeedCountService {
   }
 
   startTimerCount(): void {
-    console.log('startTimerCount');
     this.timerStart$.next();
   }
 

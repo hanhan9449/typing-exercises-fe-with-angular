@@ -75,7 +75,6 @@ export class KeyboardItemComponent implements OnInit, OnDestroy {
       currentCodeOnlyKeyDown$.pipe(map((_) => true)),
       currentCodeOnlyKeyUp$.pipe(map((_) => false))
     ).pipe(distinctUntilChanged(), share());
-    this.obsList.push(this.isActive$.subscribe((flag) => console.log(flag)));
   }
 
   ngOnDestroy(): void {
