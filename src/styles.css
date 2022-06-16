@@ -5,3 +5,6 @@
   --hhkb-keyboard-key-milk-white-color: rgb(182,180,170);
   --hhkb-keyboard-key-grey-color: rgb(158,161,155);
 }
+
+html, body { height: 100%; }
+body { margin: 0;}
